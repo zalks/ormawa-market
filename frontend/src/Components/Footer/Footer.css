@@ -1,0 +1,136 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: auto;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-logo p{
+    color: #001f3f;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    color: black;
+    font-size: 20px;
+    justify-content: center; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.footer-links li{
+    cursor: pointer;
+}
+
+.footer-socials-icon{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons-container{
+    padding: 10px;
+    padding-bottom: 1px;
+    background: white;
+    border: 1px solid white;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 20px;
+}
+
+.footer-copyright hr{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 1px;
+    background: black;
+}
+
+@media (max-width: 1024px) {
+    .footer-logo p {
+        font-size: 36px; /* Smaller font size for the logo on tablets */
+    }
+
+    .footer-links {
+        gap: 30px; /* Reduced gap for links on smaller screens */
+    }
+
+    .footer-copyright {
+        font-size: 18px; /* Smaller font size for copyright text */
+    }
+
+    .footer-socials-icon {
+        gap: 15px; /* Reduced gap between social icons */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        gap: 30px; /* Adjust overall gap on smaller screens */
+    }
+
+    .footer-logo p {
+        font-size: 28px; /* Further reduce the logo font size */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack links vertically on small screens */
+        gap: 20px; /* Reduced gap between links */
+        align-items: center; /* Center the links */
+    }
+
+    .footer-socials-icon {
+        gap: 10px; /* Reduce gap for social icons */
+    }
+
+    .footer-copyright {
+        font-size: 16px; /* Adjust font size for mobile devices */
+    }
+
+    .footer-copyright hr {
+        width: 90%; /* Wider horizontal line for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo p {
+        font-size: 24px; /* Smallest font size for logo on mobile */
+    }
+
+    .footer-links {
+        gap: 15px; /* Tighten the gap between links */
+    }
+
+    .footer-copyright {
+        font-size: 14px; /* Small font size for copyright on mobile */
+        gap: 15px; /* Reduced gap between elements */
+    }
+
+    .footer-socials-icon {
+        gap: 8px; /* Even smaller gap for social icons */
+    }
+
+    .footer-copyright hr {
+        width: 95%; /* Further increase the width of the line */
+    }
+}

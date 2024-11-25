@@ -1,0 +1,75 @@
+.relatedproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto; /* Set height to auto to prevent fixed height issues */
+    margin-bottom: 40px; /* Ensure space between the related products and the footer */
+}
+
+.relatedproduct h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.relatedproduct hr {
+    width: 200px;
+    height: 1px;
+    border-radius: 10px;
+    background: black;
+}
+
+.relatedproduct-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 1024px) {
+    .relatedproduct h1 {
+        font-size: 40px;
+    }
+
+    .relatedproduct-item {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Ensure there is enough space between items and footer */
+    .relatedproduct {
+        margin-bottom: 60px; /* Increased bottom margin for more space on larger tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .relatedproduct h1 {
+        font-size: 32px;
+    }
+
+    .relatedproduct-item {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Further increase space between related products and footer */
+    .relatedproduct {
+        margin-bottom: 80px; /* More space on smaller tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .relatedproduct h1 {
+        font-size: 28px;
+    }
+
+    .relatedproduct-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Provide enough space for small screens */
+    .relatedproduct {
+        margin-bottom: 100px; /* Larger bottom margin on mobile */
+    }
+}

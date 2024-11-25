@@ -1,0 +1,84 @@
+.descriptionbox{
+    margin: 120px 170px;
+}
+
+.descriptionbox-navigator{
+    display: flex;
+}
+
+.descriptionbox-nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid white;
+}
+
+.descriptionbox-nav-box.fade{
+    background: white;
+    color: #97999b;
+}
+
+.descriptionbox-description{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 48px;
+    padding-bottom: 70px;
+}
+
+@media (max-width: 1024px) {
+    .descriptionbox {
+        margin: 80px 50px; /* Reduce margin on tablet-sized screens */
+    }
+
+    .descriptionbox-nav-box {
+        width: 140px; /* Adjust width for navigation box */
+        height: 60px; /* Adjust height for smaller screens */
+    }
+
+    .descriptionbox-description {
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+
+    .descriptionbox-nav-box {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .descriptionbox {
+        margin: 60px 20px; /* Reduce margin further on smaller screens */
+    }
+
+    .descriptionbox-nav-box {
+        width: 120px; /* Further reduce width */
+        height: 50px; /* Further reduce height */
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .descriptionbox-description {
+        padding: 20px; /* Adjust padding for mobile devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .descriptionbox {
+        margin: 40px 10px; /* Small margin for mobile devices */
+    }
+
+    .descriptionbox-nav-box {
+        width: 100px; /* Full width for navigation box */
+        height: 40px; /* Smaller height for mobile devices */
+        font-size: 12px; /* Font size suitable for small screens */
+    }
+
+    .descriptionbox-description {
+        padding: 15px; /* Further reduce padding */
+    }
+}
